@@ -1,18 +1,18 @@
 # AutoVisionClust
 
-Este repositorio contiene tres proyectos que exploran diferentes técnicas de aprendizaje automático aplicadas al análisis de imágenes y datos. Cada proyecto se centra en una tecnología específica: Autoencoders, Vision Transformers y técnicas de clustering.
+Este repositorio contiene tres proyectos que exploran diferentes técnicas de aprendizaje automático aplicadas al análisis de imágenes y datos financieros. Cada proyecto se centra en una tecnología específica: Detección de Anomalías con Autoencoders, Vision Transformers y técnicas de clustering.
 
 ## Estructura del Repositorio
 
-### 1. Autoencoders para Análisis de Imágenes
-**Carpeta:** `/Autoencoders`
-- Implementación de autoencoders para compresión y reconstrucción de imágenes
-- Dataset: MNIST Fashion
+### 1. Detección de Anomalías en Series Temporales
+**Carpeta:** `/Anomaly Detection`
+- Implementación de autoencoders para detectar anomalías en series temporales financieras
+- Dataset: SPX (S&P 500)
 - Características principales:
-  - Arquitectura de encoder-decoder
-  - Reducción de dimensionalidad
-  - Visualización de reconstrucciones
-  - Análisis del espacio latente
+  - Arquitectura de autoencoder denso
+  - Acumulación de gradientes
+  - Detección de anomalías basada en error de reconstrucción
+  - Visualización de series temporales y anomalías
 
 ### 2. Vision Transformers para Clasificación de Enfermedades
 **Carpeta:** `/Leaf Disease Classification`
@@ -31,6 +31,7 @@ Este repositorio contiene tres proyectos que exploran diferentes técnicas de ap
 - Características principales:
   - Implementación de K-means
   - Análisis DBSCAN
+  - Implementación desde cero de BFR
   - Evaluación mediante coeficiente Silhouette
   - Visualización de clusters
 
@@ -50,22 +51,21 @@ seaborn>=0.11.1
 ## Instalación
 
 ```bash
-git clone https://github.com/username/AutoVisionClust.git
+git clone https://github.com/RicardoLoperaV/AutoVisionClust
 cd AutoVisionClust
-pip install -r requirements.txt
 ```
 
 ## Uso
 
 Cada proyecto tiene su propio notebook Jupyter con instrucciones detalladas:
 
-1. `/Autoencoders/autoencoder_analysis.ipynb`
+1. `/Anomaly Detection/Anomaly_Detection.ipynb`
 2. `/Leaf Disease Classification/Leaf_Disease_Classification.ipynb`
 3. `/Credit Card Customer Data/clustering_techniques.ipynb`
 
 ## Resultados
 
-- **Autoencoders:** Logra una reconstrucción efectiva de imágenes con una reducción significativa de dimensionalidad
+- **Anomaly Detection:** Detecta eficazmente anomalías en series temporales financieras utilizando autoencoders
 - **Vision Transformers:** Alcanza alta precisión en la clasificación de enfermedades en hojas
 - **Clustering:** Identifica segmentos claros de clientes con características distintivas
 
@@ -73,12 +73,9 @@ Cada proyecto tiene su propio notebook Jupyter con instrucciones detalladas:
 
 Las contribuciones son bienvenidas. Por favor, abra un issue primero para discutir qué le gustaría cambiar.
 
-## Licencia
-
-Este proyecto está bajo la Licencia MIT - vea el archivo `LICENSE.md` para más detalles.
 
 ## Contacto
 
-Ricardo Lopera - [@username](https://twitter.com/username) - email@example.com
+Ricardo Lopera - [@Ricardo Esteban Lopera Vasco](https://www.linkedin.com/in/ricardo-esteban-lopera-vasco/) - rloperav@unal.edu.co
 
 Link del proyecto: [https://github.com/username/AutoVisionClust](https://github.com/username/AutoVisionClust)
